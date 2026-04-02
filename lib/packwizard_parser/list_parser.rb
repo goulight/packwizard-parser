@@ -25,14 +25,14 @@ module PackwizardParser
 
     def extract_name(data)
       name = data['packName']
-      return name if name
+      return name unless name.nil? || name.empty?
 
       'Untitled list' # fallback if name is not set
     end
 
     def extract_description(data)
       description = data['packDescription']
-      return description if description
+      return description unless description.nil? || description.empty?
 
       nil
     end
