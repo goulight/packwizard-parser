@@ -28,7 +28,7 @@ module PackwizardParser
     # @param category_data [Hash] A single entry from data['tableData']
     def parse(category_data, item_parser:)
 
-      name = category_data['title']
+      name = extract_name(category_data)
 
       description = extract_description(category_data)
 
@@ -37,9 +37,15 @@ module PackwizardParser
       Category.new(name: name, description: description, items: items)
 
     end
+
+    def extract_name(category_data)
+      name = category_data['title']
+      return name unless name.nil? || name.empty?
+      'Untitled category' # Fallback if name is not set
+    end
     def extract_description(category_data)
       description = category_data['subtitle']
-      return description if description
+      return description unless description.nil? || description.empty?
 
       nil
     end

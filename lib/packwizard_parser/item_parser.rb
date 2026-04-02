@@ -47,8 +47,8 @@ module PackwizardParser
 
     def extract_name(row)
       item_name = row['item']
-      return item_name if item_name
-      nil
+      return item_name unless item_name.nil? || item_name.empty?
+      'Untitled item'
     end
 
     def extract_weight(row)
@@ -83,13 +83,13 @@ module PackwizardParser
 
     def extract_description(row)
       description = row['description']
-      return description if description
+      return description unless description.nil? || description.empty?
       nil
     end
 
     def extract_image_url(row)
       image_url = row['imageUrl']
-      return image_url if image_url
+      return image_url unless image_url.nil? || image_url.empty?
       nil
     end
 
