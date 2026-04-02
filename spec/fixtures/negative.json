@@ -1,0 +1,71 @@
+{
+  "tableData": [
+    {
+      "title": "",
+      "subtitle": "",
+      "defaultCategory": "Big 3",
+      "rows": {
+        "row_negative": {
+          "weight": -394,
+          "unit": "xyz",
+          "item": "",
+          "category": "1-person tent",
+          "brand": "Zpacks",
+          "quantity": -1,
+          "price": 599,
+          "weightType": 0,
+          "imageUrl": "",
+          "url": "https://zpacks.com/products/plexsolo-tent?aff=145",
+          "description": "",
+          "id": "row_lhkykmnb",
+          "affiliateLink": "",
+          "isSelected": false
+        }
+      },
+      "markedAsWeightType": 0,
+      "summaryRowUnit": "lb"
+    }
+  ],
+  "packName": "",
+  "packDescription": "",
+  "tableId": "69cd02300e0887bde06012c5",
+  "packCurrency": "USD",
+  "username": "xzutv",
+  "socials": {},
+  "tags": [
+    {
+      "type": "duration",
+      "value": ""
+    },
+    {
+      "type": "season",
+      "value": ""
+    },
+    {
+      "type": "trail",
+      "value": ""
+    },
+    {
+      "type": "tag0",
+      "value": ""
+    },
+    {
+      "type": "tag1",
+      "value": ""
+    },
+    {
+      "type": "tag2",
+      "value": ""
+    },
+    {
+      "type": "hidePrices",
+      "value": false
+    }
+  ],
+  "voteCount": 1,
+  "viewCount": 1,
+  "userUpvotes": [],
+  "userDownvotes": [],
+  "shareableId": "tUE6BJs",
+  "lastUpdated": 44714
+}
