@@ -11,7 +11,7 @@
 /tmp/
 .DS_Store
 *.DS_Stoe
-.idea/
+.idea
 
 # Used by dotenv library to load environment variables.
 # .env
@@ -40,6 +40,7 @@ build-iPhoneSimulator/
 /_yardoc/
 /doc/
 /rdoc/
+.rspec_status
 
 ## Environment normalization:
 /.bundle/
