@@ -19,7 +19,7 @@ module PackwizardParser
       consumable = extract_consumable_flag(row)
       total_consumable_weight = consumable ? weight_per_item * quantity : nil
 
-      # In PackWizard, the returned weight value is the single items weight regardless of quantity
+      # In PackWizard, the returned worn weight is a single items weight regardless of quantity
       worn = extract_worn_flag(row)
       worn_quantity = worn ? 1 : 0
       total_worn_weight = weight_per_item * worn_quantity
@@ -67,7 +67,7 @@ module PackwizardParser
 
     def extract_quantity(row)
       quantity = row['quantity'].to_i
-      quantity > 0 ? quantity : 1
+      quantity if quantity >= 0
     end
 
     def extract_worn_flag(row)
