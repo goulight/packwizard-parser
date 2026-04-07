@@ -1,10 +1,8 @@
 # frozen_string_literal: true
 
 module PackwizardParser
-
   # Parser for extracting PackWizard list data from JSON.
   class ListParser
-
     # Extract the lists name and description.
     # Extract the categories and their items
     #
@@ -16,9 +14,8 @@ module PackwizardParser
       List.new(
         name: extract_name(data),
         description: extract_description(data),
-        categories: category_parser.parse_all(data, item_parser: item_parser),
+        categories: category_parser.parse_all(data, item_parser: item_parser)
       )
-
     end
 
     private
@@ -36,6 +33,5 @@ module PackwizardParser
 
       nil
     end
-
   end
 end

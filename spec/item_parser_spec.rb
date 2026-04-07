@@ -4,7 +4,7 @@
 #
 
 RSpec.describe PackwizardParser::ItemParser do
-  let(:fixture_json) {File.read(File.join(__dir__, 'fixtures', 'tUE6BJs.json'))}
+  let(:fixture_json) { File.read(File.join(__dir__, 'fixtures', 'tUE6BJs.json')) }
   let(:data) { JSON.parse(fixture_json) }
   let(:parser) { described_class.new }
 
@@ -69,8 +69,6 @@ RSpec.describe PackwizardParser::ItemParser do
         item = parser.parse(row)
         expect(item.total_worn_weight).to eq(0)
       end
-
-
     end
 
     # These testcases should check if the weight conversion of ounces to grams works
@@ -103,7 +101,6 @@ RSpec.describe PackwizardParser::ItemParser do
         item = parser.parse(row)
         expect(item.total_consumable_weight).to be_within(0.01).of(113.4)
       end
-
     end
 
     describe 'with Socks row. Category: Clothing' do
@@ -156,7 +153,7 @@ RSpec.describe PackwizardParser::ItemParser do
     end
 
     describe 'negative testcases with negative.json' do
-      let(:fixture_json) {File.read(File.join(__dir__, 'fixtures', 'negative.json'))}
+      let(:fixture_json) { File.read(File.join(__dir__, 'fixtures', 'negative.json')) }
       let(:data) { JSON.parse(fixture_json) }
       let(:parser) { described_class.new }
       let(:category) { data['tableData'].first }
@@ -192,11 +189,6 @@ RSpec.describe PackwizardParser::ItemParser do
         item = parser.parse(row)
         expect(item.image_url).to be_nil
       end
-
-
-
-
     end
-
   end
 end

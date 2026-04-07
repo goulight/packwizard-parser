@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-
 module PackwizardParser
-
   class List
     attr_reader :name, :description, :categories
 
@@ -10,7 +8,7 @@ module PackwizardParser
       @name = name
       @description = description
       @categories = categories
-      end
+    end
 
     def to_h
       {
@@ -19,6 +17,5 @@ module PackwizardParser
         categories: categories.map(&:to_h)
       }
     end
-
   end
 end

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem 'rspec'
 gem 'httparty'
-gem 'standardrb', group: :development
+gem 'rspec'
+gem 'standard'

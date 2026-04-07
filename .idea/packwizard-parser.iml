@@ -17,7 +17,7 @@
     <orderEntry type="library" scope="PROVIDED" name="csv (v3.3.5, rbenv: 3.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.6.2, rbenv: 3.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="httparty (v0.24.2, rbenv: 3.3.7) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="json (v2.7.2, rbenv: 3.3.7) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v2.19.3, rbenv: 3.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="language_server-protocol (v3.17.0.5, rbenv: 3.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="lint_roller (v1.1.0, rbenv: 3.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.1.5, rbenv: 3.3.7) [gem]" level="application" />
@@ -40,7 +40,6 @@
     <orderEntry type="library" scope="PROVIDED" name="standard (v1.54.0, rbenv: 3.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="standard-custom (v1.0.2, rbenv: 3.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="standard-performance (v1.9.0, rbenv: 3.3.7) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="standardrb (v1.0.1, rbenv: 3.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v3.2.0, rbenv: 3.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode-emoji (v4.2.0, rbenv: 3.3.7) [gem]" level="application" />
   </component>
