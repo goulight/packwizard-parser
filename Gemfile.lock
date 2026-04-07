@@ -13,14 +13,8 @@ GEM
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.9)
     multi_xml (0.8.1)
       bigdecimal (>= 3.1, < 5)
-    nokogiri (1.19.2)
-      mini_portile2 (~> 2.8.2)
-      racc (~> 1.4)
-    nokogiri (1.19.2-arm64-darwin)
-      racc (~> 1.4)
     parallel (1.28.0)
     parser (3.3.11.1)
       ast (~> 2.4.1)
@@ -73,8 +67,6 @@ GEM
     standard-performance (1.9.0)
       lint_roller (~> 1.1)
       rubocop-performance (~> 1.26.0)
-    standardrb (1.0.1)
-      standard
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
     unicode-emoji (4.2.0)
@@ -85,9 +77,8 @@ PLATFORMS
 
 DEPENDENCIES
   httparty
-  nokogiri
   rspec
-  standardrb
+  standard
 
 BUNDLED WITH
    2.5.22

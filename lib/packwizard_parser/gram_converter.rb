@@ -1,16 +1,14 @@
 # frozen_string_literal: true
 
 module PackwizardParser
-
   # Created a module instead of a class so we don't need to instantiate an object
   module GramConverter
-
     # Conversion factors for each unit to grams
     FACTORS = {
-      "g" => 1.0,
-      "kg" => 1000.0,
-      "oz" => 28.35,
-      "lb" => 453.59
+      'g' => 1.0,
+      'kg' => 1000.0,
+      'oz' => 28.35,
+      'lb' => 453.59
     }.freeze
 
     # Convert the value to grams
@@ -22,6 +20,5 @@ module PackwizardParser
       factor = FACTORS.fetch(unit.to_s.downcase, 1.0)
       (value * factor)
     end
-
   end
 end

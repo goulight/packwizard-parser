@@ -1,15 +1,13 @@
 # frozen_string_literal: true
 
 module PackwizardParser
-
   class Item
     attr_reader :name, :description, :weight, :total_weight, :quantity, :price, :total_price, :image_url,
                 :consumable, :total_consumable_weight, :worn, :worn_quantity, :total_worn_weight
 
     def initialize(name:, weight:, total_weight:, quantity:, description: nil,
-                   image_url:nil, consumable: false, total_consumable_weight: nil,
+                   image_url: nil, consumable: false, total_consumable_weight: nil,
                    worn: false, worn_quantity: nil, total_worn_weight: nil)
-
       @name = name
       @weight = weight
       @description = description
@@ -45,6 +43,5 @@ module PackwizardParser
         total_worn_weight: total_worn_weight
       }
     end
-
   end
 end

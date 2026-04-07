@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe PackwizardParser::CategoryParser do
-  let(:fixture_json) {File.read(File.join(__dir__, 'fixtures', 'tUE6BJs.json'))}
+  let(:fixture_json) { File.read(File.join(__dir__, 'fixtures', 'tUE6BJs.json')) }
   let(:data) { JSON.parse(fixture_json) }
   let(:parser) { described_class.new }
   let(:item_parser) { PackwizardParser::ItemParser.new }
@@ -16,11 +16,10 @@ RSpec.describe PackwizardParser::CategoryParser do
       expect(first_category.items).to be_a(Array)
       expect(first_category.items.length).to be > 0
     end
-
   end
 
   describe 'negative testcases' do
-    let(:fixture_json) {File.read(File.join(__dir__, 'fixtures', 'negative.json'))}
+    let(:fixture_json) { File.read(File.join(__dir__, 'fixtures', 'negative.json')) }
     let(:data) { JSON.parse(fixture_json) }
     let(:parser) { described_class.new }
     let(:item_parser) { PackwizardParser::ItemParser.new }
@@ -34,9 +33,6 @@ RSpec.describe PackwizardParser::CategoryParser do
     it 'extract empty description' do
       first_category = list.first
       expect(first_category.description).to be_nil
-
     end
   end
-
-
-  end
+end

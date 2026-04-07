@@ -11,7 +11,6 @@ require_relative 'packwizard_parser/list_parser'
 require_relative 'packwizard_parser/parser'
 
 module PackwizardParser
-
   def self.parse_url(shareable_id)
     Parser.new(shareable_id: shareable_id).parse
   end

@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-
 module PackwizardParser
-
   class Category
     attr_reader :name, :description, :items
 
@@ -19,7 +17,5 @@ module PackwizardParser
         items: items.map(&:to_h)
       }
     end
-
   end
 end
-
