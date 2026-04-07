@@ -20,7 +20,7 @@ module PackwizardParser
     end
 
     def parse
-      response = HTTParty.get(API_URL, query: { sharableId: @shareable_id }, timeout: 30)
+      response = HTTParty.get(API_URL, query: { shareableId: @shareable_id }, timeout: 30)
       raise "Failed to fetch #{response.code}" unless response.success?
 
       data = JSON.parse(response.body)
