@@ -2,8 +2,6 @@
 
 source "https://rubygems.org"
 
-# gem "rails"
-
-gem 'nokogiri'
 gem 'rspec'
 gem 'httparty'
+gem 'standardrb', group: :development
