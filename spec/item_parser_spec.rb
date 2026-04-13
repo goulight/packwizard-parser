@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-# Unit testing for ItemParser
-#
-
 RSpec.describe PackwizardParser::ItemParser do
   let(:fixture_json) { File.read(File.join(__dir__, 'fixtures', 'tUE6BJs.json')) }
   let(:data) { JSON.parse(fixture_json) }

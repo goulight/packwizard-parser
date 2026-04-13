@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module PackwizardParser
-  # Created a module instead of a class so we don't need to instantiate an object
+
   module GramConverter
     # Conversion factors for each unit to grams
     FACTORS = {
