@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['hello@goulight.com']
 
   spec.summary       = 'Parser for PackWizard lists'
-  spec.description   = 'Parse PackWizard HTML to extract list data including categories, items, weights, and metadata'
+  spec.description   = 'Parse PackWizard to extract list data including categories, items, weights, and metadata'
   spec.homepage      = 'https://github.com/goulight/packwizard-parser'
   spec.license       = 'MIT'
 
