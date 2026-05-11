@@ -162,9 +162,9 @@ RSpec.describe PackwizardParser::ItemParser do
         expect(item.weight).to eq(0.0)
       end
 
-      it 'negative quantity should return 1' do
+      it 'negative quantity should return 0' do
         item = parser.parse(row)
-        expect(item.quantity).to eq(1)
+        expect(item.quantity).to eq(0)
       end
 
       it 'unknown unit type (xyz) should return 0.0' do

@@ -66,7 +66,9 @@ module PackwizardParser
 
     def extract_quantity(row)
       quantity = row['quantity'].to_i
-      quantity if quantity >= 0
+      return 0 if quantity.negative?
+
+      quantity
     end
 
     def extract_worn_flag(row)
