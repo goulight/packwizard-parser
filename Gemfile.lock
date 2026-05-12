@@ -1,3 +1,9 @@
+PATH
+  remote: .
+  specs:
+    packwizard-parser (1.0.0)
+      httparty (~> 0.24)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -76,8 +82,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  httparty
-  rspec
+  packwizard-parser!
+  rspec (~> 3.13)
   standard
 
 BUNDLED WITH
