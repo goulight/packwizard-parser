@@ -99,6 +99,15 @@ To run the test suite:
 rspec
 ```
 
+To run the PackWizard URL benchmark spec:
+
+```bash
+RUN_BENCHMARKS=1 bundle exec rspec spec/packwizard_url_benchmark_spec.rb
+```
+
+The benchmark uses `https://www.packwizard.com/s/sqRHbz2` and reports how long
+`PackwizardParser.parse_url` takes through the gem.
+
 ## Test Fixtures
 
 Test fixtures are stored in `spec/fixtures/` and contain JSON from example PackWizard lists:
