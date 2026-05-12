@@ -9,7 +9,7 @@ Used by [Goulight](https://goulight.com). Source: [github.com/goulight/packwizar
 Add to your `Gemfile`:
 
 ```ruby
-gem 'packwizard-parser', git: 'https://github.com/goulight/packwizard-parser.git'
+gem 'packwizard-parser'
 ```
 
 Then:
@@ -23,6 +23,8 @@ Or install directly:
 ```bash
 gem install packwizard-parser
 ```
+
+The gem is published on [RubyGems](https://rubygems.org/gems/packwizard-parser).
 
 ## Usage
 
